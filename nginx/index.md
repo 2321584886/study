@@ -64,8 +64,6 @@ cd sbin
 
 conf:nginx所有配置文件目录
 
-​    CGI(Common Gateway Interface)通用网关【接口】，主要解决的问题是从客户端发送一个请求和数据，服务端获取到请求和数据后可以调用调用CGI【程序】处理及相应结果给客户端的一种标准规范。
-
 ​	fastcgi.conf:fastcgi相关配置文件
 
 ​	fastcgi.conf.default:fastcgi.conf的备份文件
@@ -86,7 +84,7 @@ conf:nginx所有配置文件目录
 
 ​	mime.types.default:mime.types的备份文件
 
-​	nginx.conf:这个是Nginx的核心配置文件，这个文件非常重要，也是我们即将要学习的重点
+​	nginx.conf:Nginx的核心配置文件
 
 ​	nginx.conf.default:nginx.conf的备份文件
 
