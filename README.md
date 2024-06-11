@@ -12,15 +12,15 @@
 - 10.Mysql
 - 11.Oracle
 
-| 日期 | 安排             |
-| :--- | ---------------- |
-| 6.11 | nginx            |
-| 6.12 | nginx,Redis      |
-| 6.13 | Redis,zookeeper  |
-| 6.14 | zookeeper,gradle |
-| 6.17 | gradle,GRPC      |
-| 6.18 | GRPC             |
-| 6.19 | ElasticSearch    |
-| 6.20 | ElasticSearch    |
-| 6.21 | Mysql,Oracle     |
+| 日期 | 安排          |
+| :--- | ------------- |
+| 6.11 | nginx         |
+| 6.12 | nginx,Redis   |
+| 6.13 | Redis         |
+| 6.14 | zookeeper     |
+| 6.17 | gradle,GRPC   |
+| 6.18 | GRPC          |
+| 6.19 | ElasticSearch |
+| 6.20 | ElasticSearch |
+| 6.21 | Mysql,Oracle  |
 
