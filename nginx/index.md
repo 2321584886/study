@@ -46,7 +46,7 @@ cd sbin
 //启动
 ./nginx
 
-或者 yuman'zhuang
+或者 yum安装
 
 ```
 
@@ -57,6 +57,56 @@ cd sbin
 
 
 ## 基础用法
+
+### nginx目录
+
+![image-20240611171926383](C:\Users\23215\AppData\Roaming\Typora\typora-user-images\image-20240611171926383.png)
+
+conf:nginx所有配置文件目录
+
+​    CGI(Common Gateway Interface)通用网关【接口】，主要解决的问题是从客户端发送一个请求和数据，服务端获取到请求和数据后可以调用调用CGI【程序】处理及相应结果给客户端的一种标准规范。
+
+​	fastcgi.conf:fastcgi相关配置文件
+
+​	fastcgi.conf.default:fastcgi.conf的备份文件
+
+​	fastcgi_params:fastcgi的参数文件
+
+​	fastcgi_params.default:fastcgi的参数备份文件
+
+​	scgi_params:scgi的参数文件
+
+​	scgi_params.default：scgi的参数备份文件
+
+​    uwsgi_params:uwsgi的参数文件
+
+​	uwsgi_params.default:uwsgi的参数备份文件
+
+​	mime.types:记录的是HTTP协议中的Content-Type的值和文件后缀名的对应关系
+
+​	mime.types.default:mime.types的备份文件
+
+​	nginx.conf:这个是Nginx的核心配置文件，这个文件非常重要，也是我们即将要学习的重点
+
+​	nginx.conf.default:nginx.conf的备份文件
+
+​	koi-utf、koi-win、win-utf这三个文件都是与编码转换映射相关的配置文件，用来将一种编码转换成另一种编码
+
+html:存放nginx自带的两个静态的html页面
+
+​	50x.html:访问失败后的失败页面
+
+​	index.html:成功访问的默认首页
+
+logs:记录入门的文件，当nginx服务器启动后，这里面会有 access.log error.log 和nginx.pid三个文件出现。
+
+sbin:是存放执行程序文件nginx
+
+​	nginx是用来控制Nginx的启动和停止等相关的命令。
+
+
+
+
 
 ### 配置文件
 
@@ -90,7 +140,7 @@ ps aux|grep nginx  查看nginx进程
 
 
 
-```json
+```
 #全局配置
 #用于配置与具体业务无关的参数 例如
 #worker_processes 4;表示要起4个线程
