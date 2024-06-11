@@ -104,7 +104,11 @@ sbin:是存放执行程序文件nginx
 
 ​	nginx是用来控制Nginx的启动和停止等相关的命令。
 
-
+```
+//日志查看
+tail -f access.log
+tail -f error.log
+```
 
 
 
