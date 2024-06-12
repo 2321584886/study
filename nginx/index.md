@@ -229,7 +229,40 @@ chmod 755 /usr/lib/systemd/system/nginx.service
 开机启动: systemctl enable nginx
 ```
 
-## Nginx命令配置到系统环境
+## Nginx的跨域问题解决
+
+添加两个头信息，一个是`Access-Control-Allow-Origin`,`Access-Control-Allow-Methods`
+
+```
+  add_header Access-Control-Allow-Origin *;
+  add_header Access-Control-Allow-Methods GET,POST,PUT,DELETE;
+  
+```
+
+例  8084 端口的页面请求8083的/getUser 
+
+```
+server{
+        listen  8083;
+        server_name localhost;
+        location /getUser{
+			    add_header Access-Control-Allow-Origin *;
+                add_header Access-Control-Allow-Methods GET,POST,PUT,DELETE;
+                default_type application/json;
+                return 200 '{"id":1,"name":"TOM","age":18}';
+        }
+	}
+	server{
+		listen 	8084;
+		server_name localhost;
+		location /{
+		root /home/tddnb/ng/myweb;
+		index cros.html;
+		}
+	}
+```
+
+
 
 ## 问题
 

@@ -1,0 +1,20 @@
+<html>
+  <head>
+        <meta charset="utf-8">
+        <title>跨域问题演示</title>
+        <script src="https://cdn.staticfile.net/jquery/1.10.2/jquery.min.js">
+        </script>
+        <script>
+            $(function(){
+                $("#btn").click(function(){
+                        $.get('http://192.168.137.200:8083/getUser',function(data){
+                                alert(JSON.stringify(data));
+                        });
+                });
+            });
+        </script>
+  </head>
+  <body>
+        <input type="button" value="获取数据" id="btn"/>
+  </body>
+</html>
