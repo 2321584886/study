@@ -24,3 +24,17 @@
 | 6.20 | ElasticSearch |
 | 6.21 | Mysql,Oracle  |
 
+6.12
+
+1.熟悉nginx处理跨域问题的解决办法，rewrite相关指令 （全局变量 ，if,return,rewrite等）
+
+2.熟悉反向代理，负载均衡，缓存集成，基本概念
+
+3.熟悉redis基本概念，安装redis实现一些简单命令操作
+
+4.安装zookeeper，熟悉相关概念和服务端和客户端命令操作
+
+5.gradle安装和简单知识点过一遍
+
+6.
+
